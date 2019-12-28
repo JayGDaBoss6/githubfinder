@@ -25,5 +25,5 @@ async function getList() {
         console.error(err)
     }
 }
-
+console.log('libgen and nodejs in one day!')
 getList();

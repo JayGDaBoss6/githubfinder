@@ -1,29 +1,43 @@
-const libgen = require('libgen');
+document.getElementById('searchBox').addEventListener('keyup', (e) => {
 
-const options = {
-    mirror: 'http://gen.lib.rus.ec',
-    query: 'infosec',
-    count: 5,
-    sort_by: 'year',
-    reverse: true
-}
+  const myHeaders = new Headers();
+  myHeaders.append("Authorization", "34222c900c2364a2f2f297bf90f1930f2b394c92 OAUTH-TOKEN");
+  myHeaders.append("Authorization", "Bearer 34222c900c2364a2f2f297bf90f1930f2b394c92");
 
-async function getList() {
-    try {
-        const data = await libgen.search(options)
-        let n = data.length
-        console.log(`${n} results for "${options.query}"`)
-        while (n--) {
-            console.log('');
-            console.log('Title: ' + data[n].title)
-            console.log('Author: ' + data[n].author)
-            console.log('Download: ' +
-                'http://gen.lib.rus.ec/book/index.php?md5=' +
-                data[n].md5.toLowerCase())
+  var requestOptions = {
+    method: 'GET',
+    headers: myHeaders,
+    redirect: 'follow'
+  };
+
+
+  fetch(`https://api.github.com/users/${e.target.value}`, requestOptions)
+    .then(response => response.json())
+    .then(result => {
+
+
+
+
+        if (e.target.value) {
+          document.getElementById('userImg').innerHTML = "";
+          console.log(result)
+
+          let img = document.createElement('img');
+          img.id = 'userImg';
+          img.src = `${result.avatar_url}`;
+          img.classList = 'img-fluid my-3';
+          img.alt = 'User profile Image';
+          document.getElementById('userImg').appendChild(img);
+          document.getElementById('publicRepos').innerText = `Public Repos: ${result.public_repos}`;
+          document.getElementById('publicGists').innerText = `Public Gists: ${result.public_gists}`;
+          document.getElementById('followers').innerText = `Followers: ${result.followers}`;
+          document.getElementById('following').innerText = `Following: ${result.following}`;
+          document.getElementById('profileBtn').href = `${result.html_url}`;
+
         }
-    } catch (err) {
-        console.error(err)
-    }
-}
-console.log('libgen and nodejs in one day!')
-getList();
+      }
+
+    )
+    .catch(error => console.log('error', error));
+
+});

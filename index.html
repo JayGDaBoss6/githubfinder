@@ -5,32 +5,139 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <title>New Project</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/css/mdb.min.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <title>GitHub Finder</title>
 </head>
 
 <body>
 
+    <div class="container-fluid">
+        <!-- header -->
+        <div class="row">
+            <div class="col-12 blue-gradient">
+                <h3 class="h3-responsive text-center my-1">GitHub Finder🔍</h3>
+            </div>
+        </div>
+        <!-- Search github users -->
+        <div class="row justify-content-center">
+            <div class="col-8 border rounded m-3">
+                <h3 class="h3-responsive m-1">Search GitHub Users</h3>
+                <p>Enter a username to fetch a users profile info and repos.</p>
+                <div class="md-form">
+                    <input type="text" id="form1" class="form-control">
+                    <label for="form1">GitHub Username...</label>
+                </div>
+            </div>
+        </div>
+        <!-- User info -->
+        <div class="row justify-content-center">
+            <div class="col-8 border rounded m-3 d-flex justify-content-center">
+                <div class="row justify-content-center">
+                    <!-- User image -->
+                    <div class="col-12 d-flex justify-content-center">
+                        <img src="https://hairstylecamp.com/wp-content/uploads/2016/06/18-5.jpg" class="img-fluid my-3"
+                            alt="User profile image">
+                    </div>
+                    <div class="col-12 mb-3">
+                        <!-- User badges -->
+                        <div class="infoBadges">
+                            <h6 class="d-inline"><span class="badge badge-primary custom-badge">Primary</span></h6>
+                            <h6 class="d-inline"><span class="badge badge-default custom-badge">Default</span></h6>
+                            <h6 class="d-inline"><span class="badge badge-secondary custom-badge">Secondary</span></h6>
+                            <h6 class="d-inline"><span class="badge badge-success custom-badge">Success</span></h6>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <!-- User information -->
+                        <ul class="list-group mb-3">
+                            <li class="list-group-item">Cras justo odio</li>
+                            <li class="list-group-item">Dapibus ac facilisis in</li>
+                            <li class="list-group-item">Morbi leo risus</li>
+                            <li class="list-group-item">Porta ac consectetur ac</li>
+                            <li class="list-group-item">Vestibulum at eros</li>
+                        </ul>
+                    </div>
+                    <div class="col-12">
+                        <!-- View profile button -->
+                        <button class="btn btn-block blue-gradient mb-3">View profile</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Latest Repos -->
+        <div class="row">
+            <div class="col-12">
+                <h3 class="h3-responsive mb-3">Latest Repos</h3>
+                <hr>
+                <ul class="list-group mb-3">
+                    <li class="list-group-item d-flex">
+                        <p class="">Cras justo odio</p>
+                        <div class="d-inline ml-auto">
+                            <h6 class="d-inline"><span class="badge badge-primary custom-badge">Primary</span></h6>
+                            <h6 class="d-inline"><span class="badge badge-default custom-badge">Default</span></h6>
+                            <h6 class="d-inline"><span class="badge badge-secondary custom-badge">Secondary</span></h6>
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex">
+                        <p class="">Cras justo odio</p>
+                        <div class="d-inline ml-auto">
+                            <h6 class="d-inline"><span class="badge badge-primary custom-badge">Primary</span></h6>
+                            <h6 class="d-inline"><span class="badge badge-default custom-badge">Default</span></h6>
+                            <h6 class="d-inline"><span class="badge badge-secondary custom-badge">Secondary</span></h6>
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex">
+                        <p class="">Cras justo odio</p>
+                        <div class="d-inline ml-auto">
+                            <h6 class="d-inline"><span class="badge badge-primary custom-badge">Primary</span></h6>
+                            <h6 class="d-inline"><span class="badge badge-default custom-badge">Default</span></h6>
+                            <h6 class="d-inline"><span class="badge badge-secondary custom-badge">Secondary</span></h6>
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex">
+                        <p class="">Cras justo odio</p>
+                        <div class="d-inline ml-auto">
+                            <h6 class="d-inline"><span class="badge badge-primary custom-badge">Primary</span></h6>
+                            <h6 class="d-inline"><span class="badge badge-default custom-badge">Default</span></h6>
+                            <h6 class="d-inline"><span class="badge badge-secondary custom-badge">Secondary</span></h6>
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex">
+                        <p class="">Cras justo odio</p>
+                        <div class="d-inline ml-auto">
+                            <h6 class="d-inline"><span class="badge badge-primary custom-badge">Primary</span></h6>
+                            <h6 class="d-inline"><span class="badge badge-default custom-badge"a >Default</span></h6>
+                            <h6 class="d-inline"><span class="badge badge-secondary custom-badge">Secondary</span></h6>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
 
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
-    <script src="logic.js"></script>
+        <!-- JQuery -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js">
+        </script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/js/mdb.min.js">
+        </script>
+
 </body>
 
 </html>

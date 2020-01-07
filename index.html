@@ -27,9 +27,13 @@
                 <h3 class="h3-responsive text-center my-1">GitHub Finder🔍</h3>
             </div>
         </div>
+        <div id ="errorBox"class="errorBox bg-danger w-50 mx-auto text-center text-white mt-3 d-none">
+            Not found
+        </div>
         <!-- Search github users -->
         <div class="row justify-content-center">
             <div class="col-8 border rounded m-3">
+
                 <h3 class="h3-responsive m-1">Search GitHub Users</h3>
                 <p>Enter a username to fetch a users profile info and repos.</p>
                 <div class="md-form">
@@ -40,13 +44,13 @@
         </div>
         <!-- User info -->
         <div class="row justify-content-center">
-            <div class="col-8 border rounded m-3 d-flex justify-content-center">
+            <div class="col-8  rounded m-3 d-flex justify-content-center">
                 <div class="row justify-content-center">
                     <!-- User image -->
                     <div id="userImg" class="col-12 d-flex justify-content-center">
 
                     </div>
-                    <div class="col-12 mb-3">
+                    <div id="badgesSect" class="col-12 mb-3">
                         <!-- User badges -->
                         <div class="infoBadges">
                             <h6 class="d-inline"><span id="publicRepos" class="badge badge-primary custom-badge"></span>
@@ -64,11 +68,9 @@
                         <ul class="list-group mb-3">
                         </ul>
                     </div>
-                    <div class="col-12">
+                    <div id="profileButtonSect" class="col-12">
                         <!-- View profile button -->
-                        <a href="" id="profileBtn" target="_blank" rel="noopener noreferrer">
-                            <button id="viewProfile" class="btn btn-block blue-gradient mb-3">View profile</button>
-                        </a>
+
                     </div>
                 </div>
             </div>
@@ -76,49 +78,10 @@
         <!-- Latest Repos -->
         <div class="row">
             <div class="col-12">
-                <h3 class="h3-responsive mb-3">Latest Repos</h3>
+                <h3 class="h3-responsive mb-3">Repos</h3>
                 <hr>
-                <ul class="list-group mb-3">
-                    <li class="list-group-item d-flex">
-                        <p class="">Cras justo odio</p>
-                        <div class="d-inline ml-auto">
-                            <h6 class="d-inline"><span class="badge badge-primary custom-badge">Primary</span></h6>
-                            <h6 class="d-inline"><span class="badge badge-default custom-badge">Default</span></h6>
-                            <h6 class="d-inline"><span class="badge badge-secondary custom-badge">Secondary</span></h6>
-                        </div>
-                    </li>
-                    <li class="list-group-item d-flex">
-                        <p class="">Cras justo odio</p>
-                        <div class="d-inline ml-auto">
-                            <h6 class="d-inline"><span class="badge badge-primary custom-badge">Primary</span></h6>
-                            <h6 class="d-inline"><span class="badge badge-default custom-badge">Default</span></h6>
-                            <h6 class="d-inline"><span class="badge badge-secondary custom-badge">Secondary</span></h6>
-                        </div>
-                    </li>
-                    <li class="list-group-item d-flex">
-                        <p class="">Cras justo odio</p>
-                        <div class="d-inline ml-auto">
-                            <h6 class="d-inline"><span class="badge badge-primary custom-badge">Primary</span></h6>
-                            <h6 class="d-inline"><span class="badge badge-default custom-badge">Default</span></h6>
-                            <h6 class="d-inline"><span class="badge badge-secondary custom-badge">Secondary</span></h6>
-                        </div>
-                    </li>
-                    <li class="list-group-item d-flex">
-                        <p class="">Cras justo odio</p>
-                        <div class="d-inline ml-auto">
-                            <h6 class="d-inline"><span class="badge badge-primary custom-badge">Primary</span></h6>
-                            <h6 class="d-inline"><span class="badge badge-default custom-badge">Default</span></h6>
-                            <h6 class="d-inline"><span class="badge badge-secondary custom-badge">Secondary</span></h6>
-                        </div>
-                    </li>
-                    <li class="list-group-item d-flex">
-                        <p class="">Cras justo odio</p>
-                        <div class="d-inline ml-auto">
-                            <h6 class="d-inline"><span class="badge badge-primary custom-badge">Primary</span></h6>
-                            <h6 class="d-inline"><span class="badge badge-default custom-badge" a>Default</span></h6>
-                            <h6 class="d-inline"><span class="badge badge-secondary custom-badge">Secondary</span></h6>
-                        </div>
-                    </li>
+                <ul id="reposList" class="list-group mb-3">
+
                 </ul>
             </div>
         </div>
@@ -126,6 +89,36 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
         <!-- JQuery -->
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <!-- Bootstrap tooltips -->
